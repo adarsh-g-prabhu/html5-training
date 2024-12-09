@@ -1,0 +1,12 @@
+div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    margin-top: 5px;
+}
+hr{
+    background-color: black;
+    height: 0.8px;
+}
