@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table demo</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>third</td> <td>fourth</td>
+        </tr>
+        <tr>
+            <td>first</td> <td>second</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <table border="1" >
+        <colgroup>
+        <col style="background-color : rgb(240, 240, 87)">
+        <col />
+        <col>
+        <col style="background-color : rgb(155, 155, 192)">
+        </colgroup>
+        <caption>Product Data </caption>
+        <thead>
+        <tr>
+            <th colspan="2" scope="col">product name</th>
+            <th scope="col">price</th>
+            <th scope="col">type</th>
+        </tr>
+        </thead>
+        <tr>
+            <td colspan="2">Oreo Biscuit</td>
+            <td>40</td>
+            <td>Food & Beverages</td>
+        </tr>
+        <tr>
+            <td colspan="2">Colgate </td>
+            <td>80</td>
+            <td>Toothpaste</td>
+        </tr>
+        <tr>
+            <td colspan="2">Azus Rog Strix-G Laptop</td>
+            <td>95,000</td>
+            <td>Electronics</td>
+        </tr>
+    </table>
+<br><br>
+<table border="1">
+    <caption>headers and id in table</caption> 
+<thead>
+    <tr>
+    <th rowspan="2" colspan="2"></th>
+    
+      <th id="clothes" colspan="3">Clothes</th>
+    </tr>
+    <tr>
+        
+      <th id="trousers" headers="clothes">Trousers</th>
+      <th id="skirts" headers="clothes">Skirts</th>
+      <th id="dresses" headers="clothes">Dresses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="belgium" rowspan="3">Belgium</th>
+      <th id="antwerp" headers="belgium">Antwerp</th>
+      <td headers="antwerp belgium clothes trousers">56</td>
+      <td headers="antwerp belgium clothes skirts">22</td>
+      <td headers="antwerp belgium clothes dresses">43</td>
+    </tr>
+    <tr>
+        <th id="brussels" headers="belgium">Brussels</th>
+        <td headers="brussels belgium clothes trousers">51</td>
+        <td headers="brussels belgium clothes skirts">27</td>
+        <td headers="brussels belgium clothes dresses">38</td>
+   
+      </tr>
+  </tbody>  
+</table>
+</body>
+</html>
