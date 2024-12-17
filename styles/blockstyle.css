@@ -1,0 +1,12 @@
+ul{
+    color:red;
+}
+.linkclass1 a{
+    color: inherit;
+}
+.linkclass1 a{
+    color: initial;
+}
+.linkclass1 a{
+    color: unset;
+}
