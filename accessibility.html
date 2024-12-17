@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility features in html using wai aria</title>
+</head>
+<body>
+    <section aria-live="assertive">
+        <p>
+
+        </p>
+    </section>
+
+    <ul role="tablist">
+        <li
+          class="active"
+          role="tab"
+          aria-selected="true"
+          aria-setsize="3"
+          aria-posinset="1"
+          tabindex="0">
+          Tab 1
+        </li>
+        <li
+          role="tab"
+          aria-selected="false"
+          aria-setsize="3"
+          aria-posinset="2"
+          tabindex="0">
+          Tab 2
+        </li>
+        <li
+          role="tab"
+          aria-selected="false"
+          aria-setsize="3"
+          aria-posinset="3"
+          tabindex="0">
+          Tab 3
+        </li>
+      </ul>
+      <div class="panels">
+        <article class="active-panel" role="tabpanel" aria-hidden="false">…</article>
+        <article role="tabpanel" aria-hidden="true">…</article>
+        <article role="tabpanel" aria-hidden="true">…</article>
+      </div>
+      
+
+      <h1>Links</h1>
+
+<p>This is a link to <a href="https://www.mozilla.org">Mozilla</a>.</p>
+
+<p>
+  Another link, to the
+  <a href="https://developer.mozilla.org">Mozilla Developer Network</a>.
+</p>
+
+<h2>Buttons</h2>
+
+<p>
+  <button data-message="This is from the first button">Click me!</button>
+  <button data-message="This is from the second button">Click me too!</button>
+  <button data-message="This is from the third button">And me!</button>
+</p>
+
+<h2 role="Details Form">Enter your details</h2>
+
+<form>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" />
+  </div>
+  <div>
+    <label for="Location">Location:</label>
+    <select id="Location" name="Location">
+      <option>Kochi</option>
+      <option>Chennai</option>
+      <option>Bangalore</option>
+      <option>Other</option>
+    </select>
+    <input type="submit" name="submit" id="submit" value="submit">
+  </div>
+</form>
+<h1 role="image accessibility">Images</h1>
+<img src="https://suchscience.net/wp-content/uploads/2024/09/v2-ino7s-j2jpq-1024x702.jpg" 
+width="300" height="300" alt="A sloth hanging on a tree branch in a happy mood.">
+
+<video  controls poster="images/cat.jpg" width="300" height="300" >
+    <source src="images/cat.mp4" type="video/mp4">
+    <track kind="subtitles" src="subtitles.vtt"  srclang="en"/>
+    video is not supported on browser
+</video>
+
+</body>
+</html>
