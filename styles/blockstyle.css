@@ -10,3 +10,45 @@ ul{
 .linkclass1 a{
     color: unset;
 }
+
+.boxstyle{
+border: 2px solid black;
+}
+p{
+    width: 500px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 5px 5px 5px 5px; 
+}
+div.boxstyle{
+    width: 700px;
+    height: 100px;
+}
+
+.imgborder{
+    border: 2px solid blue;
+    height: 300px;
+    width: 300px;
+}
+.imgstyling{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+}
+
+table{
+    border: 2px solid brown;
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px solid blue;
+text-align: center;
+}
+thead,tfoot {
+    background-image: url(https://plus.unsplash.com/premium_photo-1706838707088-e3b4170054e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+  tbody{
+    background-color: turquoise;
+  }
