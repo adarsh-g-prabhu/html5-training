@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <!-- Canvas Element -->
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const c = canvas.getContext('2d');
+
+        c.fillStyle = 'red';
+        c.fillRect(50, 50, 100, 100);
+
+        c.beginPath();
+        c.arc(300, 150, 50, 0, Math.PI * 2);
+        c.fillStyle = 'blue';
+        c.fill();
+
+        
+        c.font = "30px Arial";
+        c.fillText("Hello World", 70, 200);
+        c.strokeText("Good Morning" , 70, 300);
+    </script>
+</body>
+</html>

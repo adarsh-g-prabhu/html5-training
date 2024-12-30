@@ -17,7 +17,8 @@ greetings();
 
 //anonymous func
 
-(function () { console.log("this is anonymous function");});
+(function () { console.log("this is anonymous function");}) ();
+
 
 
 hello = () => {
