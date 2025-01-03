@@ -33,3 +33,4 @@ delete persons.interest;
 console.log(persons.interest);
 
 
+

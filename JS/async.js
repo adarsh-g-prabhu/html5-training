@@ -87,4 +87,21 @@ setTimeout(() => {
       }
       
       fetchProducts();
+
+
+      const nums = async () => {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(5+4);
+          }, 1000);
+        });
+      };
+      
+      const addNums = async () => {
+        const sum = await nums();
+        
+        console.log(`The sum is: ${sum}`);
+      };
+      
+      addNums();
       
