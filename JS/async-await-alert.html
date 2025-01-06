@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A function to simulate an asynchronous task
+function performBackgroundTask(taskName, delay) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(`${taskName} completed after ${delay / 1000} seconds`);
+      resolve();
+    }, delay);
+  });
+}
+
+async function executeTasks() {
+  // Start background tasks
+  console.log("Starting background tasks...");
+  
+  // These tasks run concurrently in the background
+  performBackgroundTask("Background Task 1", 5000);  // 5 seconds task
+  performBackgroundTask("Background Task 2", 3000);  // 3 seconds task
+
+  // Use await to pause the execution of this function for 10 seconds
+  console.log("Waiting for 10 seconds before showing alert...");
+  await new Promise((resolve) => setTimeout(resolve, 10000));  // Wait for 10 seconds
+
+  // Show alert after 10 seconds
+  alert("10 seconds have passed! Showing the alert now.");
+
+  // Perform another task after the alert
+  console.log("After alert, background tasks should still be running.");
+  performBackgroundTask("Background Task 3", 2000);  // 2 seconds task
+}
+
+executeTasks();
+
+    </script>
+</body>
+</html>

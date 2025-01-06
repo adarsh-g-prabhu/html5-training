@@ -1,0 +1,44 @@
+.calc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    border: 0.5px solid gray;
+   
+    padding: 5px 5px 5px 5px;
+    
+}
+
+div.calculator{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 275px;
+    background: lightgray
+}
+
+button{
+    width: 35px;
+    height: 35px;
+}
+
+#btnClear{
+    margin-right: 8px;
+}
+input{
+    width: 70%;
+    margin-left: 8px;
+}
+
+div.operators button{
+    padding-left:  20px;
+    padding-right: 20px;
+}
+div.operators{
+    margin-left: 8px;
+}

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>CASIO</h2>
+        <div class="calc">
+            <input type="text" id="inputField" value="0">
+            <button id="btnClear" onclick="allClear()">AC</button>
+            <div class="operators">
+            <button id="btn1" onclick="operations('1')">1</button>
+            <button id="btn2" onclick="operations('2')">2</button>
+            <button id="btn3" onclick="operations('3')">3</button>
+            <button id="btnPlus" onclick="operations('+')">+</button>
+            
+            <button id="btn4" onclick="operations('4')">4</button>
+            <button id="btn5" onclick="operations('5')">5</button>
+            <button id="btn6" onclick="operations('6')">6</button>
+            <button id="btnMinus" onclick="operations('-')">-</button>
+            
+            <button id="btn7" onclick="operations('7')">7</button>
+            <button id="btn8" onclick="operations('8')">8</button>
+            <button id="btn9" onclick="operations('9')">9</button>
+            <button id="btnMultiply" onclick="operations('*')">x</button>
+            
+            <button id="btn0" onclick="operations('0')">0</button>
+            
+            <button id="btnEqual" onclick="calculate()">=</button>
+            <button id="btnDivide" onclick="operations('/')">/</button>
+            <button id="btnClearOne" onclick="clearOne()"><-</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

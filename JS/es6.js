@@ -43,3 +43,19 @@ const [red, yellow, green] = foo;
 console.log(red); 
 console.log(yellow);
 console.log(green); 
+
+
+const hi=[...foo,"four","five"];
+console.log(hi);
+
+
+function* Generator() {
+  yield "Hello";  
+  yield "World";  
+}
+
+const gen = Generator();
+console.log(gen.next().value);  
+console.log(gen.next().value); 
+
+export {foo};
