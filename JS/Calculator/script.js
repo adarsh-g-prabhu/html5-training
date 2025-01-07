@@ -37,3 +37,4 @@ function clearOne()
         inputField.value= inputField.value.substring(0,inputField.value.length-1);
     }
 }
+
