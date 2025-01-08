@@ -6,15 +6,16 @@
 
 function largest(num1,num2)
 {
-    if (num1>num2)
-    {
-        largestNum= num1;
-    }
-    else
-    {
-        largestNum= num2;
-    }
-    return(largestNum);
+    // if (num1>num2)
+    // {
+    //     largestNum= num1;
+    // }
+    // else
+    // {
+    //     largestNum= num2;
+    // }
+    // return(largestNum);
+    return num1 >num2 ? num1:num2;
 }
 number1=71;
 number2=8;
@@ -42,16 +43,23 @@ isNumber(0);
 isNumber(15);
 
 
-function leapYear(year)
+function leapYear(year=2000)
 {
-    if(year%4==0)
+    if(isNaN(year)==false && year>0)
     {
-        console.log(year+" is a leap year");
+        if(year%4==0)
+        {
+            console.log(year+" is a leap year");
+        }
+        else
+        {
+            console.log(year+" is not a leap year");
+        }
     }
-    else
-    {
-        console.log(year+" is not a leap year");
+    else{
+        console.log(`${year} is not a year`)
     }
 }
 leapYear(2004);
+
 leapYear(1995);
