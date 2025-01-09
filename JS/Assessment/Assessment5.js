@@ -51,6 +51,9 @@ function duplicate(arr2)
     // arr_set=new Set(arr2);
     // arr2=[...arr_set];
 
+
+    arr2.filter(num=>arr2.includes(num))
+
     arr2.sort();
     let prev=arr2[0];
     for(i=1;i<arr2.length;i++)

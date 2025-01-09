@@ -21,6 +21,6 @@ console.log("Name : "+Name);
 console.log(`Age: ${age}`);
 isStudent? console.log(`${Name} is student`) : console.log(`${Name} is not student`);
 
-console.log("Type of Name Variable : "+typeof(Name));
-console.log("Type of Age Variable : "+typeof(age));
-console.log("Type of is_Student Variable : "+typeof(isStudent));
+console.log("Type of Name Variable : " + typeof(Name));
+console.log("Type of Age Variable : " + typeof(age));
+console.log("Type of is_Student Variable : " + typeof(isStudent));
