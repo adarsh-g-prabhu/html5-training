@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2.css">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration </h1>
+    <form action="" name="registration">
+    <div class="form">
+    <label for="username">Username</label>
+    <input class="" type="text" name="username" id="username" placeholder="Username / Email">
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" id="first_name" placeholder="First Name">
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+    <div class="gender"> 
+    <label for="gender">Gender </label> <input type="radio" value="Male" name="gender"> Male <input type="radio" value="Female" name="gender"> Female</div>
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="dob" id="dob" >
+    <label for="phone">Phone</label>
+    <input type="text" maxlength="10" placeholder="Phone / Mobile Number" name="phone" id="phone">
+    <label for="address">Address</label>
+    <textarea name="address" id="address" placeholder="Enter Full Address"></textarea>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Password">
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+    <input type="submit" name="submit" value="Register" id="submit">
+    </form>
+    </div>
+    <hr>
+    <div class="loginfooter">
+
+    <a href="login.html">Login now</a>
+    </div>
+    <script src="scripts/regValidate.js"></script>
+</body>
+</html>

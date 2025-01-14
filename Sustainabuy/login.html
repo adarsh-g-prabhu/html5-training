@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login </h1>
+    <form action="" name="Login">
+        <div class="form">
+        <label for="username">Username</label>
+        <br><input type="text" name="username" id="username" placeholder="Username or Email">
+            <div id="unameDiv"></div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <div id="passDiv"></div>
+        <input type="submit" name="submit" value="Login">
+        </div>
+    </form>
+    <hr>
+    <div class="loginfooter">Not Signed Up,<a href="registration.html">Sign Up</a></div>
+
+    <script>
+    //     const uname=sessionStorage.getItem('username')
+    //     if (uname)
+    // {
+    //     window.location.href="index.html";
+    // }
+
+
+        const form=document.querySelector('form');
+        form.addEventListener('submit',
+        (event)=>{event.preventDefault();
+        validate(event);})
+        function validate(event)
+        {
+            username=document.getElementById('username').value;
+            password=document.getElementById('password').value;
+
+        if(username.trim()=="")
+        {   
+
+            alert("username/email should not be blank");
+            return false;
+            
+        }
+        const patternEmail=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if(!patternEmail.test(username))
+        {
+            alert("the email pattern is not correct");
+            return false;
+        }
+        if(password.trim()=="")
+        {   
+            
+            alert("password should not be blank");
+            return false;
+             
+        }
+         const pattern=/^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d$!@%&]{8,}$/;
+         if(!pattern.test(password))
+         {
+            alert("Password Should contain atleast 8 characters,1 uppercase,1 lowercase. Only numbers,characters and special characters allowed");
+            return false;
+         }
+    
+        const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+
+        if (userDetails) {
+            if (username == userDetails.username && password == userDetails.password) 
+            {
+                sessionStorage.setItem('username', username);
+                window.location.href = "index.html"; 
+            } 
+            else
+            {
+                alert("Username or Password is incorrect.");
+            }
+        } 
+       
+        
+         return true;
+        }
+        
+    </script>
+</body>
+</html>
