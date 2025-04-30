@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/events.js"></script>
+    <title>Events</title>
+</head>
+<body>
+    <button name="clickbutton" onclick="clicked()">Click</button>
+    <br><br>
+    <button onmouseover="mouseover()" id="mouseover">mouseover</button>
+    <br><br>
+    <button name="greet" onclick="greet()">greet</button> 
+    <br><br>
+    <a href="google.com" ondrag="console.log('dragged google') ">google drag link</a>
+    <br><br>
+    <form action="">
+    <input type="text" name="name" placeholder="name" onkeypress="console.log('keypressed') ">
+    </form>
+
+    <iframe src="https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers" frameborder="1px" allow="geolocation"></iframe>
+</body>
+</html>

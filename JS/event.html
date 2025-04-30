@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+ 
+</head>
+<body>
+    <button id="button">click</button>
+
+    <button id="hello">hello click</button>
+    <p class="hello-div"></p>
+    
+    <input id="textBox" type="text" />
+<div id="output"></div>
+    <script>
+        const btn = document.getElementById("button");
+
+        function random(number) {
+        return Math.floor(Math.random() * (number + 1));
+        }
+        var count=0;
+        function changeBackground() {
+            if (count==5){
+        btn.removeEventListener("click",changeBackground);
+        }
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+        count+=1;
+        console.log(count)
+        }
+        btn.addEventListener("click",changeBackground);
+      
+
+        const b1= document.getElementById("hello");
+        var count1=0;
+        const helloPara = document.querySelector('.hello-div');
+        function helloLister()
+        {
+            const arr=["hy","hi","hai","hlo","hello","hey"];
+            var remainder=count1%5;
+            console.log("count:",count1);
+            console.log(remainder);
+            helloPara.textContent += `${arr[remainder]} `;
+            count1+=1;
+
+        }
+        b1.onclick=helloLister;
+
+        const textBox = document.querySelector("#textBox");
+        const output = document.querySelector("#output");
+        textBox.addEventListener("keydown", (event) => {
+            output.textContent = `You pressed "${event.key}".`;
+            });
+
+    </script>
+</body>
+</html>

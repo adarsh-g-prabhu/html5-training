@@ -1,0 +1,40 @@
+.columnstyling{
+    columns: 6 4em;
+    column-rule-width: 2px;
+    column-rule-style: dotted;
+    column-rule-color: black;
+    column-gap: normal;
+    min-height: fit-content;
+    max-width: max-content;
+}
+
+@media screen and (orientation: landscape) {
+    .article-lamp{
+        background-color: lightblue;
+    }
+    
+}
+
+@media (hover:hover) {
+    h3:hover{
+        color: brown;
+        transition-duration: 1.5s;
+    }
+
+ 
+}
+
+@media  not (display-mode:browser){
+    body{
+        background-color: aqua;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
+
+
+
+
+
+

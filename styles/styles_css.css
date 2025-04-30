@@ -1,0 +1,120 @@
+.headingTitle{
+    text-decoration: wavy underline darkblue;
+    text-align: center;
+
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    background-color: bisque;
+}
+
+
+.Designation{
+    text-align: center;
+    color: brown;
+}
+
+
+h1,h2{
+    color: orange;
+    text-align: center;
+}
+
+table{
+    table-layout: auto;
+    vertical-align: middle;
+    
+    text-align: center;
+}
+div.statistics{
+    text-align: center;
+}
+
+h1 + p {
+    color: red;
+}
+
+*{
+    font-style: normal;
+}
+
+
+
+/* hyper link styling */
+a {
+    color: blue;
+  }
+  
+  /* Internal links, beginning with "w" */
+  a[href^="w"] {
+    color: yellow;
+  }
+  /* Links with "wiki" anywhere in the URL */
+  a[href*="wiki"] {
+    background-color: b;
+  }
+  
+  /* Links with "K" anywhere in the URL,
+     regardless of capitalization */
+  a[href*="K" i] {
+    color: cyan;
+  }
+  
+  /* Links with "ki" anywhere in the URL,
+  with matching capitalization */
+  a[href*="ki" s] {
+    color: pink;
+  }
+  
+  /* Links that end in ".com"*/
+  a[href$=".com"] {
+    color: red;
+  }
+  
+  /* Links that start with "https://" and end in ".org" */
+  a[href^="https://"][href$=".org"]
+  {
+    color: green;
+  }
+
+  .\0003123class{
+    background-color: blue;
+  }
+  .this\$class{
+    background-color: blue;
+  }
+  .Statistics{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+
+  .foo p ~ span {
+    color: blue;
+  }
+  
+  .foo p ~ .foo span {
+    color: green;
+  }
+button:hover{
+    background-color: green;
+}
+button:active{
+    background-color: aqua;
+}
+
+/* col.selected||td {
+    background: gray;
+    color: white;
+    font-weight: bold;
+  } */
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
